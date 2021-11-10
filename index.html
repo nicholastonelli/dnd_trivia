@@ -14,10 +14,24 @@
 
         </div>
         <div class='buttonDiv'>
-            <button>New Question</button>
+            <button id='newQBtn'>New Question</button>
         </div>
         <div class='decks'>
-
+        </div>
+        <div id='modal'>
+            <h1>Question</h1>
+            <p id='modalQuestion'>The Question.</p>
+            <form id='modalList'>
+                <input type='radio' value='a' name='answerBtn'>
+                <label for='a' id='a'>a</label><br>
+                <input type='radio' value='b' name='answerBtn'>
+                <label for='b' id='b'>b</label><br>
+                <input type='radio' value='c' name='answerBtn'>
+                <label for='c' id='c'>c</label><br>
+            </form>
+            <p id='modalAnswer'></p>
+            <button id='submitBtn'>Sumbit</button>
+            <button id='closeBtn'>Close</button>
         </div>
     </main>
     <footer class='info'>This is where the display will go</footer>
