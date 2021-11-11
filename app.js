@@ -3,7 +3,7 @@
 // triviaWell
 let modal = document.querySelector('#modal')
 let modalQuestion = document.querySelector('#modalQuestion')
-
+let answerMsg = document.querySelector('#check')
 let modalAnswer = document.querySelector('#modalAnswer')
 let playerScore = 0000
 let triviaWell = [
@@ -77,6 +77,7 @@ function handleCloseEvent() {
     triviaWell.shift()
     modal.style.display = 'none'
     document.querySelector('#closeBtn').style.display = 'none'
+    answerMsg.innerText = ''
     modalAnswer.innerText = ''
 }
 
@@ -88,16 +89,27 @@ document.querySelector('#closeBtn').style.display = 'block'
 document.querySelector('#submitBtn').style.display = 'none'
 }
 
+// Fire animation effects. Fire should do SOMETHING when clicked, and when mouseovered
+document.querySelector('#fire').addEventListener('click', () => {
+    console.log('You clicked the fire')
+})
+document.querySelector('#fire').addEventListener('mouseover', () => {
+    console.log('You hovered the fire')
+})
+
 // answerCheck() checks the form input against triviaWell[0].correctAnswer
 
 function answerCheck() {
     if (triviaWell[0].correctAnswer == document.querySelector('input[name="answerBtn"]:checked').value) {
-    console.log('You\'re correct')
+    answerMsg.style.color = 'green'
+    answerMsg.innerText = 'You\'re Correct!'
     playerScore++
     document.querySelector('#score').innerText = (`000${playerScore}`)
     console.log(playerScore)
     console.log(document.querySelector('input[name="answerBtn"]:checked').value)
     } else {
+    answerMsg.style.color = 'red'
+    answerMsg.innerText = 'That\'s not quite right.'
     console.log('You are wrong')
     }
 }
