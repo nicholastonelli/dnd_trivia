@@ -3,11 +3,14 @@
 // triviaWell
 let modal = document.querySelector('#modal')
 let modalQuestion = document.querySelector('#modalQuestion')
-let modalList = document.querySelector('#modalList')
+
 let modalAnswer = document.querySelector('#modalAnswer')
+let playerScore = 0000
 let triviaWell = [
     {
      question: 'Who created Dungeons and Dragons?',
+     difficulty: 'medium',
+     category: 'system',
      answers: {
          a: 'Tracy Hickman',
          b: 'Gary Gygax',
@@ -18,6 +21,8 @@ let triviaWell = [
     },
     {
         question: 'How was the Eberron campaign setting created?',
+        difficulty: 'hard',
+        category: 'eberron',
         answers: {
             a: 'Write in Competition',
             b: 'Popular Book Series Adaptation',
@@ -25,6 +30,30 @@ let triviaWell = [
         },
         correctAnswer: 'a',   
         correctExplain: 'In 2002, Wizards of the Coast set a write in competition called "Fantasy Setting Search", a fan submission from designer Keith Baker won in 2004, and the concept eventually became Eberron.'
+    },
+    {
+        question: 'What is the famously complicated name of the Dark Elf city in Faerun?',
+        difficulty: 'hard',
+        category: 'faerun',
+        answers: {
+            a: 'Menzoberranzan',
+            b: 'It cannot be spoken in common tongues.',
+            c: 'Dol\'gur\'landan',
+        },
+        correctAnswer: 'a',   
+        correctExplain: 'Menzoberranzan (pronounced: /ˈmɛnzoʊbəˈrɑːnzɑːn/ MEN-zoh-buh-RAN-zan), is a city in the Forgotten Realms, made popular by bestselling books by R.A. Salvatore.'
+    },
+    {
+        question: 'What is the current Edition of D&D?',
+        difficulty: 'easy',
+        category: '5e',
+        answers: {
+            a: 'D&D Next',
+            b: '5th Edition',
+            c: 'Advanced Dungoens and Dragons',
+        },
+        correctAnswer: 'b',   
+        correctExplain: 'In August of 2014, Wizards of the Coast, the company responsible for Dungeons and Dragons, released Dungeons and Dragons, 5th Edition, after two years of testing. Advanced Dungeons and Dragons released in 1977, and D&d Next was the working title for 5e while it was in production.'
     },
     
 ]
@@ -36,6 +65,7 @@ console.log(triviaWell);
 function handleClickEvent() {
     console.log('I am handleClickEvent')
     modal.style.display = 'block'
+    document.querySelector('#submitBtn').style.display = 'block'
     wellChecker()
     console.log(triviaWell)
     generateTrivia()
@@ -54,8 +84,8 @@ function handleSubmitEvent() {
 console.log('Submitted!')
 answerCheck()
 modalAnswer.innerText = (triviaWell[0].correctExplain)
-// The submit event should display the Close button
 document.querySelector('#closeBtn').style.display = 'block'
+document.querySelector('#submitBtn').style.display = 'none'
 }
 
 // answerCheck() checks the form input against triviaWell[0].correctAnswer
@@ -63,10 +93,12 @@ document.querySelector('#closeBtn').style.display = 'block'
 function answerCheck() {
     if (triviaWell[0].correctAnswer == document.querySelector('input[name="answerBtn"]:checked').value) {
     console.log('You\'re correct')
+    playerScore++
+    document.querySelector('#score').innerText = (`000${playerScore}`)
+    console.log(playerScore)
     console.log(document.querySelector('input[name="answerBtn"]:checked').value)
     } else {
     console.log('You are wrong')
-    console.log(document.querySelector('input[name="answerBtn"]:checked').value)
     }
 }
 
@@ -104,3 +136,9 @@ function wellChecker() {
 // triviaRandomizer() reaaranged the array of tiviaWell so questions don't stay in the same order, goes in gameStart/Reset
 
 //gameStart/gameReset
+
+// FUN STUFF
+
+// The scroll
+
+// The fire! Onhover, the button and fireimg should animate, flaring slightly more, glowing??

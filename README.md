@@ -19,3 +19,5 @@ Nov 9	set up initial git, base frame	incomplete
 Nov 10 - 11	initial framework	incomplete
 Nov 12 - 15	Game logic	incomplete
 Nov 20	Presentations	
+
+CREDITS: "Music: www.bensound.com" 
