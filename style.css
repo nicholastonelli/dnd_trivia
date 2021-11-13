@@ -4,7 +4,8 @@ body {
     grid-template-rows: 1fr 3fr 1fr;
     width: 100vw;
     height: 100vh;
-    color: blanchedalmond;
+    background-color: black;
+    color: cornsilk;
 }
 #deck1, .buttonDiv, #deck2 {
     text-align: center;
@@ -14,12 +15,11 @@ embed {
  opacity: .1;
 }
 #deck1 {
-background-color: burlywood;
+
 grid-column: 1;
 grid-row: 2;
 }
 .buttonDiv {
-    background-color: chartreuse;
 grid-column: 2;
 grid-row: 2;
 display: flex;
@@ -32,18 +32,19 @@ justify-content: flex-end;
     margin-bottom: 20%;
     color: #cccccc;
     background-color: #DF0000;
+
     border-radius: 12px;
     width: 25%;
     height: 10%;
 
 }
 #deck2 {
-background-color: palegreen ;
+
 grid-column: 3;
 grid-row: 2;
 }
 footer {
-    background-color: paleturquoise;
+
     text-align: center;
     grid-column: 1/span 3;
     grid-row: 3;
@@ -54,7 +55,6 @@ footer {
 #header {
     grid-column: 1/ span 3;
     grid-template-rows: 1;
-    background-color: blanchedalmond;
     }
 h1 {
     color: red;
@@ -64,6 +64,10 @@ h1 {
 
 #modal {
 	background-color: rgba(0,0,0,0.4);
+    background-image: url('scroll.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: initial;
 	position: fixed;
 	top: 0;
 	left: 0;
@@ -75,12 +79,13 @@ h1 {
 }
 
 #modalTextbox {
-    background-color: rgb(219, 184, 119);
+    color: black;
+   /*  background-color: rgb(219, 184, 119); */
 	height: 350px;
 	width: 550px;
 	border-radius: 2px;
 	margin: 150px auto;
-	box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+
 	padding: 2%;
     line-height: 120%;
 	font-family: Arial, Helvetica, sans-serif;
@@ -102,5 +107,8 @@ input {
 #fire {
     width: 65%;
     margin-top: 35%;
-
+    opacity: 50%;
+}
+#scoreText {
+    margin-left: 15vh;
 }
