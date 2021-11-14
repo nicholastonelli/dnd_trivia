@@ -237,6 +237,7 @@ function wellChecker() {
 document.querySelector('#fire').addEventListener('click', () => {
     console.log('You clicked the fire')
     document.querySelector('#fire').style.opacity = '100%'
+    document.querySelector('#ampersand').style.opacity = '100%'
 })
 
 document.querySelector('#fire').addEventListener('mouseover', () => {
@@ -247,11 +248,12 @@ document.querySelector('#fire').addEventListener('mouseover', () => {
          let rando = (Math.floor((Math.random()*100) + 40))
          document.querySelector('#fire').style.opacity = String(rando) + '%'
          // This h1 will be replaced by the background image, to get it to flicker consistantly along with the fire.
-        document.querySelector('h1').style.opacity = String(rando+10) + '%'
+        document.querySelector('#ampersand').style.opacity = String(rando+10) + '%'
         }, 300)
 }) 
 
 document.querySelector('#fire').addEventListener('mouseleave', () => {
     console.log('You left the fire')
     document.querySelector('#fire').style.opacity = '50%' 
+    document.querySelector('#ampersand').style.opacity = '75%'
 })
