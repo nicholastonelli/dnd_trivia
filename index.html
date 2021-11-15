@@ -5,27 +5,32 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DnD Trivia</title>
-    <link rel="icon" href="ampersand.png">
+    <link rel="icon" href="images/ampersand.png">
 <link rel="stylesheet" href="style.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=MedievalSharp&display=swap" rel="stylesheet">
 </head>
 <body>
-    <img src="images/dndbackground.png" alt="ampersand" id='ampersand'>
+
     <div id='header'>
    
     <!-- <embed src="bensound-epic.mp3" type=""> -->
     </div>
     
-        <div class='decks' id='deck1'>
-Deck1
+        <div class='deckDivs' id='deck1'>
+            <img src="images/cards.png" alt="first deck" class='decks' id='deckImg1'>
         </div>
         <div class='buttonDiv'>
+            <img src="images/sand1.png" alt="ampersand" id='ampersand'>
             <img src="images/campireblank.png" alt="bonfire Image" id='fire'>
             <button id='newQBtn'>New Question</button>
         </div>
-        <div class='decks' id='deck2'>DECK2
+        <div class='deckDivs' id='deck2'>
+            <img src="images/cards.png" alt="second deck"  class='decks'  id='deckImg2'>
         </div>
         <div id='modal'>
-            <div id='modalTextbox'>
+            <div class='modalTextbox'>
             <h1>Question</h1>
             <p id='modalQuestion'>The Question.</p>
             <form>
@@ -44,12 +49,24 @@ Deck1
                 <button id='closeBtn'>Close</button>
             </div>
 
+            </div>
         </div>
-    </div>
+        <div id='openingModal'>
+            <div class="modalTextbox">
+                <h1>Welcome!</h1>
+                <p>To the Dungeons and Dragons trivia game!</p>
+                <p id='qCount'></p>
+                <p>Answer questions correctly to gain XP. Level up once you hit a milestone. The first milestone is 300 XP.</p>
+
+                <button id='closeOpenerBtn'>Begin!</button>
+            </div>
+        </div>
     
-    <footer class='info'>
+    <div class='info' id='scoreDiv'>
         <p id='scoreText'>SCORE:</p><p id='score'>0000</p>
-    </footer>
+    </div>
+    <div id='levelDiv'>
+        <p id='scoreText'>Level: &nbsp</p><p id='level'> 01</p></div>
     <script src="app.js"></script>
 </body>
 </html>

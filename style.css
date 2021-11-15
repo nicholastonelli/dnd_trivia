@@ -6,35 +6,34 @@ body {
     height: 100vh;
     background-color: #2f313c;
     color: cornsilk;
+    font-family: 'MedievalSharp', cursive;
 }
 #ampersand {
     position: absolute;
     margin-left: auto;
     margin-right: auto;
     margin-top: auto;
-    top: 150px;
+    top: 100px;
     left: 0;
     right: 0;
-    width: 1200px;
+    width: 25vw;
     z-index: -1;
     opacity: 50%;
 }
-
-
 #deck1, .buttonDiv, #deck2 {
     text-align: center;
-    
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
 }
 embed {
  opacity: .1;
 }
 #deck1 {
-
 grid-column: 1;
 grid-row: 2;
 }
 .buttonDiv {
-/* background-color: rgba(0, 0, 255, 0.424); */
 grid-column: 2;
 grid-row: 2;
 display: flex;
@@ -42,26 +41,41 @@ flex-direction: column;
 align-items: center;
 justify-content: flex-end;
 }
-#newQBtn {
+#newQBtn, #closeBtn, #submitBtn, #closeOpenerBtn {
     margin-top: 5%;
     margin-bottom: 0%;
     color: #cccccc;
-    background-color: #DF0000;
-
-    border-radius: 12px;
+    background-color: #df0000bd;
+    border-radius: 18px;
     width: 25%;
     height: 10%;
-
+    font-family: 'MedievalSharp', cursive;
 }
-#deck2 {
 
+#deck2 {
 grid-column: 3;
 grid-row: 2;
+
 }
-footer {
+#deckImg2 {
+    transform: scaleX(-1);
+}
+#deckImg2, #deckImg1 {
+    width: 10vw;
+    margin: auto;
+}
+
+#scoreDiv {
 
     text-align: center;
-    grid-column: 1/span 3;
+    grid-column: 1/span 2;
+    grid-row: 3;
+    font-size: 50px;
+    display: inline-flex;
+}
+#levelDiv {
+    text-align: center;
+    grid-column: 3;
     grid-row: 3;
     font-size: 50px;
     display: inline-flex;
@@ -79,7 +93,7 @@ h1 {
 
 #modal {
 	background-color: rgba(0,0,0,0.4);
-    background-image: url('scroll.png');
+    background-image: url('images/scroll.png');
     background-repeat: no-repeat;
     background-position: center;
     background-size: initial;
@@ -92,8 +106,23 @@ h1 {
 	overflow: auto;
 	display: none;
 }
+#openingModal {
+    background-color: rgba(0,0,0,0.4);
+    background-image: url('images/scroll.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: initial;
+	position: fixed;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	z-index: 1;
+	overflow: auto;
+	display: block;
+}
 
-#modalTextbox {
+.modalTextbox {
     color: black;
    /*  background-color: rgb(219, 184, 119); */
 	height: 350px;
@@ -103,7 +132,10 @@ h1 {
 	padding: 6%;
     line-height: 120%;
     font-size: 18px;
-	font-family: Arial, Helvetica, sans-serif;
+	font-family: 'MedievalSharp', cursive;
+}
+#closeOpenerBtn {
+
 }
 #closeBtn {
     display: none;
@@ -116,7 +148,7 @@ input {
 	outline: none;
 	border-radius: 3px;
 	color: white;
-	font-family: 'Arial';
+
 	cursor: pointer;
 }
 #fire {
