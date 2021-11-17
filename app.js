@@ -13,6 +13,81 @@ let xpChart = [300, 900, 2700, 6500, 14000, 23000, 34000, 48000, 64000, 85000, 1
 let triviaWell = ''
 let triviaDeck = [
     {
+        question: 'How are Beholders said to be born?',
+        difficulty: {
+            level: 'hard',
+            reward: 500
+        },
+        category: 'monster',
+        answers: {
+            a: 'Born out of Dreams',
+            b: 'Born from Illithid experiments',
+            c: 'Born from strange gods'
+        },
+        correctAnswer: 'a',   
+        correctExplain: 'Beholders don’t truly sleep when they rest. Instead, a beholder’s mind remains semiconscious even as it dreams. As a result, on rare occasions when a beholder dreams of another beholder, the dream-reality becomes warped and takes on physical form, becoming another actual beholder. To call this process reproduction would be inaccurate, because in most cases the old and new beholders fight to the death—a fact for which the rest of the world is thankful.'
+       },
+    {
+        question: 'Banshee are Irish folk monsters whose wail foretells death. What does their name mean?',
+        difficulty: {
+            level: 'hard',
+            reward: 500
+        },
+        category: 'monster',
+        answers: {
+            a: 'Evil Woman',
+            b: 'Fairy woman',
+            c: 'Dark Fairy'
+        },
+        correctAnswer: 'b',   
+        correctExplain: 'A banshee (/ˈbænʃiː/ BAN-shee; Modern Irish bean sí, from Old Irish: ben síde [bʲen ˈʃiːðʲe], "woman of the fairy mound" or "fairy woman") is a female spirit in Irish folklore who heralds the death of a family member.'
+       },
+    {
+        question: 'In Dungeons and Dragons 3.5, Angels are have this particular alignment restriciton.',
+        difficulty: {
+            level: 'hard',
+            reward: 500
+        },
+        category: 'monster',
+        answers: {
+            a: 'Always Lawful, often Good',
+            b: 'Always Good, often Lawful',
+            c: 'Always Chaotic, often Good'
+        },
+        correctAnswer: 'c',   
+        correctExplain: 'Angels in D&D are always Good aligned creatures, but are not always Lawful aligned.'
+       },
+    {
+        question: 'What is an Aboleth?',
+        difficulty: {
+            level: 'medium',
+            reward: 100
+        },
+        category: 'monster',
+        answers: {
+            a: 'A shapeshifting treasure chest',
+            b: 'A magic cave giant',
+            c: 'A psychic water horror'
+        },
+        correctAnswer: 'c',   
+        correctExplain: 'Aboleths (pronounced: /ˈæboʊlɛθ/ ÆB-o-leth  were a race of malevolent, eel-like aberrations with potent psionic abilities.'
+       },
+    {
+        question: 'What is an Aarakocra?',
+        difficulty: {
+            level: 'medium',
+            reward: 100
+        },
+        category: 'monster',
+        answers: {
+            a: 'A bird person',
+            b: 'A snake person',
+            c: 'A tiger person'
+        },
+        correctAnswer: 'a',   
+        correctExplain: 'Aarakocra (pronounced: /ærɑːˈkoʊkrɑː/ æ-ra-KO-kra  or: /ɑːrɑːˈkoʊkrɑː/ a-rah-KO-krah; also called bird-men,were a race of avian humanoids.'
+       },
+    {
         question: 'What is a Spelljammer?',
         difficulty: {
             level: 'hard',
@@ -255,7 +330,11 @@ let triviaDeck = [
     
 ]
 
-triviaWell = triviaDeck
+let catTrivia = triviaDeck.filter(function (cat) {
+    return cat.category == 'monster'
+})
+console.log(catTrivia)
+
 
 document.querySelector('#qCount').innerText = `There are currently ${triviaDeck.length} questions in this game.`
 
@@ -303,17 +382,13 @@ function answerCheck() {
     answerMsg.innerText = 'You\'re Correct!'
     playerScore+=triviaWell[0].difficulty.reward
     document.querySelector('#score').innerText = (`000${playerScore}`)
-    console.log(playerScore)
-    console.log(document.querySelector('input[name="answerBtn"]:checked').value)
     } else {
     answerMsg.style.color = 'red'
     answerMsg.innerText = 'That\'s not quite right.'
-    console.log('You are wrong')
     }
 }
 
 function generateTrivia() {
-// this function fills the modal with the neccesary question, form, and etc..
     modalQuestion.innerText = triviaWell[0].question
     document.querySelector('#a').innerText = triviaWell[0].answers.a
     document.querySelector('#b').innerText = triviaWell[0].answers.b
@@ -331,7 +406,9 @@ function shuffleTrivia(array) {
 
 function handleStartEvent() {
     document.querySelector('#openingModal').style.display = 'none'
+    triviaWell = triviaDeck
     shuffleTrivia(triviaWell)
+    
 }
 
 //levelChecker() meaasures the player score against the next level array, and increases their level if 
@@ -380,25 +457,17 @@ document.querySelector('#closeOpenerBtn').addEventListener('click', handleStartE
 
 // Fire animation effects. Fire should do SOMETHING when clicked, and when mouseovered
 document.querySelector('#fire').addEventListener('click', () => {
-    console.log('You clicked the fire')
     document.querySelector('#fire').style.opacity = '100%'
     document.querySelector('#ampersand').style.opacity = '100%'
 })
 
 document.querySelector('#fire').addEventListener('mouseover', () => {
     console.log('You hovered the fire')
-    document.querySelector('#fire').style.opacity = '100%'
-    document.querySelector('#ampersand').style.opacity = '100%'
-   /*  document.querySelector('#fire').style.opacity = String(Math.floor(Math.random()*100)) + '%' */
-   /*  let fireHover = setInterval(function() {
-         let rando = (Math.floor((Math.random()*100) + 40))
-         document.querySelector('#fire').style.opacity = String(rando) + '%'
-         document.querySelector('#ampersand').style.opacity = String(rando+10) + '%'
-        }, 300) */
+    document.querySelector('#fire').style.opacity = '90%'
+    document.querySelector('#ampersand').style.opacity = '90%'
 }) 
 
 document.querySelector('#fire').addEventListener('mouseleave', () => {
-    console.log('You left the fire')
     document.querySelector('#fire').style.opacity = '50%' 
     document.querySelector('#ampersand').style.opacity = '75%'
 })

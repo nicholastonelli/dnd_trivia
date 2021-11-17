@@ -24,7 +24,7 @@
         <div class='buttonDiv'>
             <img src="images/sand1.png" alt="ampersand" id='ampersand'>
             <img src="images/campireblank.png" alt="bonfire Image" id='fire'>
-            <button id='newQBtn'>New Question</button>
+            <button class='button' id='newQBtn'>New Question</button>
         </div>
         <div class='deckDivs' id='deck2'>
             <img src="images/cards.png" alt="second deck"  class='decks'  id='deckImg2'>
@@ -45,9 +45,9 @@
             <div id='modalFoot'>
                 <p id='check'></p>
                 <p id='modalAnswer'></p>
-                <button id='submitBtn'>Sumbit</button>
-                <button id='closeBtn'>Close</button>
-            </div>
+                <button class='button' id='submitBtn'>Sumbit</button>
+                <button class='button' id='closeBtn'>Close</button>
+            </div> 
 
             </div>
         </div>
@@ -57,8 +57,16 @@
                 <p>To the Dungeons and Dragons trivia game!</p>
                 <p id='qCount'></p>
                 <p>Answer questions correctly to gain XP. Level up once you hit a milestone. The first milestone is 300 XP.</p>
-
-                <button id='closeOpenerBtn'>Begin!</button>
+                <p>Select from categories below, or try your INT against a bunch of trivia!</p>
+                <nav>
+                    <button id='system' class='button'>Game Trivia</button>
+                    <button id='monster' class='button'> Monster Lore</button>
+                    <button id='eberron' class='button'>Eberron Trivia</button>
+                    <button id='forgottenRealms' class='button'> Forgotten Realms Trivia</button>
+                    <button class='button' id='closeOpenerBtn'>Begin with all trivia!</button>
+                </nav>
+               
+                <p> Credits: Music from BenSound, D&D Ampersand from Wizards of the Coast.</p>
             </div>
         </div>
     
@@ -66,7 +74,7 @@
         <p id='scoreText'>SCORE:</p><p id='score'>0000</p>
     </div>
     <div id='levelDiv'>
-        <p id='scoreText'>Level: &nbsp</p><p id='level'> 01</p></div>
+        <p id='scoreText'>LEVEL: &nbsp</p><p id='level'> 01</p></div>
     <script src="app.js"></script>
 </body>
 </html>
