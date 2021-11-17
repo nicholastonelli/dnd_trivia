@@ -54,7 +54,7 @@ let triviaDeck = [
             b: 'Always Good, often Lawful',
             c: 'Always Chaotic, often Good'
         },
-        correctAnswer: 'c',   
+        correctAnswer: 'b',   
         correctExplain: 'Angels in D&D are always Good aligned creatures, but are not always Lawful aligned.'
        },
     {
@@ -330,24 +330,17 @@ let triviaDeck = [
     
 ]
 
-let catTrivia = triviaDeck.filter(function (cat) {
-    return cat.category == 'monster'
-})
-console.log(catTrivia)
 
 
 document.querySelector('#qCount').innerText = `There are currently ${triviaDeck.length} questions in this game.`
 
 //Eventhandlers
 
-
-
 function handleClickEvent() {
     modal.style.display = 'block'
     document.querySelector('#submitBtn').style.display = 'block'
     wellChecker()
     generateTrivia()
-
 }
 
 function handleCloseEvent() {
@@ -358,21 +351,33 @@ function handleCloseEvent() {
     answerMsg.innerText = ''
     modalAnswer.innerText = ''
     levelChecker()
+    cardDeck()
 }
 
 function handleSubmitEvent() {
-console.log('Submitted!')
-answerCheck()
-modalAnswer.innerText = (triviaWell[0].correctExplain)
-document.querySelector('#closeBtn').style.display = 'block'
-document.querySelector('#submitBtn').style.display = 'none'
+    answerCheck()
+    modalAnswer.innerText = (triviaWell[0].correctExplain)
+    document.querySelector('#closeBtn').style.display = 'block'
+    document.querySelector('#submitBtn').style.display = 'none'
 }
 
 // categoryFilter() filters out items by category before the shuffle
 
-function categoryFilter(array, category) {
-array.filter()
+// cardDeck() checks the % of questions remaining and changes the deck1 and deck2 images, increasing the deck1 and decreasing the deck2
+
+function cardDeck() {
+    if (triviaWell.length <= (triviaDeck.length/4)) {
+        document.querySelector('#deck1').innerHTML = "<img src='images/cards.png' alt='first deck'  class='decks'  id='deckImg1'></img>"
+        document.querySelector('#deck2').innerHTML = "<img src='images/cards.png' alt='second deck'  class='decks'  id='deckImg2'></img>"
+    } else if (triviaWell.length <= (triviaDeck.length/2)) {
+        document.querySelector('#deck1').innerHTML = "<img src='images/cards.png' alt='first deck'  class='decks'  id='deckImg1'></img>"
+        document.querySelector('#deck2').innerHTML = "<img src='images/cards.png' alt='second deck'  class='decks'  id='deckImg2'></img>"
+    } else if (triviaWell.length <= (triviaDeck.length/1.25)) {
+        document.querySelector('#deck1').innerHTML = "<img src='images/cards.png' alt='first deck'  class='decks'  id='deckImg1'></img>"
+document.querySelector('#deck2').innerHTML = "<img src='images/cards.png' alt='second deck'  class='decks'  id='deckImg2'></img>"
+    }
 }
+
 
 // answerCheck() checks the form input against triviaWell[0].correctAnswer
 
@@ -380,7 +385,8 @@ function answerCheck() {
     if (triviaWell[0].correctAnswer == document.querySelector('input[name="answerBtn"]:checked').value) {
     answerMsg.style.color = 'chartreuse'
     answerMsg.innerText = 'You\'re Correct!'
-    playerScore+=triviaWell[0].difficulty.reward
+    playerScore+= Math.floor((triviaWell[0].difficulty.reward * (1 + (playerLevel/10))))
+    console.log(Math.floor((triviaWell[0].difficulty.reward * (1 + (playerLevel/10)))) )
     document.querySelector('#score').innerText = (`000${playerScore}`)
     } else {
     answerMsg.style.color = 'red'
@@ -406,6 +412,10 @@ function shuffleTrivia(array) {
 
 function handleStartEvent() {
     document.querySelector('#openingModal').style.display = 'none'
+    playerLevel = 1
+    document.querySelector('#level').innerText = (`0${playerLevel}`)
+    playerScore = 0
+    document.querySelector('#score').innerText = (`000${playerScore}`)
     triviaWell = triviaDeck
     shuffleTrivia(triviaWell)
     
@@ -462,9 +472,11 @@ document.querySelector('#fire').addEventListener('click', () => {
 })
 
 document.querySelector('#fire').addEventListener('mouseover', () => {
-    console.log('You hovered the fire')
-    document.querySelector('#fire').style.opacity = '90%'
-    document.querySelector('#ampersand').style.opacity = '90%'
+    let randoNum = Math.floor(Math.random()*100)
+    console.log(randoNum)
+    document.querySelector('#fire').style.opacity = `${randoNum}%`
+    document.querySelector('#ampersand').style.opacity = `${randoNum}%`
+    
 }) 
 
 document.querySelector('#fire').addEventListener('mouseleave', () => {

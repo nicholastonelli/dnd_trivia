@@ -3,10 +3,10 @@ A trivia game for Dungeon and Dragons fans.
 
 # Timeframes
 Task	              Priority	   EstimatedTime	Time Invested	Actual Time
-Setting up site framework	    H	  10 hrs 	X hrs	X hrs
-Creating game logic            	H	  15 hrs 	X hrs	X hrs
-Styling	                        M	  5 hrs 	X hrs	X hrs
-Responsive Styling	            L	  5 hrs	    X hrs	X hrs
+Setting up site framework	    H	  10 hrs 	14 hrs	X hrs
+Creating game logic            	H	  15 hrs 	12 hrs	X hrs
+Styling	                        M	  5 hrs 	4 hrs	X hrs
+Responsive Styling	            L	  5 hrs	    2 hrs	X hrs
 Getting API to log and render	L	  5 hrs 	X hrs	X hrs
 Total	                        X	  40 hrs 	X hrs	X hrs
 
