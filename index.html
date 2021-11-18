@@ -15,11 +15,11 @@
 
     <div id='header'>
    
-    <!-- <embed src="bensound-epic.mp3" type=""> -->
+    <embed src="bensound-epic.mp3" type="">
     </div>
     
         <div class='deckDivs' id='deck1'>
-            <img src="images/cards.png" alt="first deck" class='decks' id='deckImg1'>
+            <img src="images/cards6.png" alt="first deck" class='decks' id='deckImg1'>
         </div>
         <div class='buttonDiv'>
             <img src="images/sand1.png" alt="ampersand" id='ampersand'>
@@ -27,13 +27,13 @@
             <button class='button' id='newQBtn'>New Question</button>
         </div>
         <div class='deckDivs' id='deck2'>
-            <img src="images/cards.png" alt="second deck"  class='decks'  id='deckImg2'>
+            <img src="images/cards0.png" alt="second deck"  class='decks'  id='deckImg2'>
         </div>
         <div id='modal'>
             <div class='modalTextbox'>
             <h1>Question</h1>
             <p id='modalQuestion'>The Question.</p>
-            <form>
+            <form id='qForm'>
                 <input type='radio' value='a' name='answerBtn'>
                 <label for='a' id='a'>a</label><br>
                 <input type='radio' value='b' name='answerBtn'>
@@ -47,6 +47,7 @@
                 <p id='modalAnswer'></p>
                 <button class='button' id='submitBtn'>Sumbit</button>
                 <button class='button' id='closeBtn'>Close</button>
+                <button class='button' id='resetBtn'>Reset Game</button>
             </div> 
 
             </div>
@@ -59,13 +60,13 @@
                 <p>Answer questions correctly to gain XP. Level up once you hit a milestone. The first milestone is 300 XP.</p>
                 <p>Select from categories below, or try your INT against a bunch of trivia!</p>
                 <nav>
-                    <button id='system' class='button'>Game Trivia</button>
-                    <button id='monster' class='button'> Monster Lore</button>
-                    <button id='eberron' class='button'>Eberron Trivia</button>
-                    <button id='forgottenRealms' class='button'> Forgotten Realms Trivia</button>
-                    <button class='button' id='closeOpenerBtn'>Begin with all trivia!</button>
+                    <input type='checkbox' id='system' class=''>Game Trivia</input>
+                    <input type='checkbox' id='monster' class=''> Monster Lore</input>
+                    <input type='checkbox' id='eberron' class=''>Eberron Trivia</input>
+                    <input type='checkbox' id='faerun' class=''> Forgotten Realms</input>
+                    
                 </nav>
-               
+               <button class='button' id='closeOpenerBtn'>Begin!</button>
                 <p> Credits: Music from BenSound, D&D Ampersand from Wizards of the Coast.</p>
             </div>
         </div>
