@@ -12,6 +12,52 @@ let playerScore = 0000
 let xpChart = [300, 900, 2700, 6500, 14000, 23000, 34000, 48000, 64000, 85000, 100000, 120000, 140000, 165000, 195000, 225000, 265000, 305000, 355000]
 let triviaWell = ''
 let triviaDeck = [
+   
+    {
+        question: 'What is a Bulette often called?',
+        difficulty: {
+            level: 'medium',
+            reward: 100
+        },
+        category: 'monster',
+        answers: {
+            a: 'Tunnel Snake',
+            b: 'Land Shark',
+            c: 'Burrow Beast'
+        },
+        correctAnswer: 'b',   
+        correctExplain: 'The bulette also known as a landshark, was a fearsome magical beast whose origins were unknown but had become a dangerous predator.Feared and hated by most living creatures, bulettes were extremely dangerous, burrowing unseen beneath the soil before erupting up at an unexpected moment to seize their prey. Dwarves called the bulette a ghohlbrorn.'
+       },    
+       {
+        question: 'In the land of Halruaa, which of these monsters are bred as pets?',
+        difficulty: {
+            level: 'very hard',
+            reward: 1000
+        },
+        category: 'forgotten realms',
+        answers: {
+            a: 'Minature Dragon',
+            b: 'Minature Giant Space Hamster',
+            c: 'Miniature Behir'
+        },
+        correctAnswer: 'c',   
+        correctExplain: 'Halruaan behirs were a miniature species native to Halruaa, where they were bred as pets or guardians.'
+       },
+    {
+        question: 'You walk into a long dark hall, filled with incredibly realistic stone statues of terrified adventurers. What of these three monsters do you prepared to fight?',
+        difficulty: {
+            level: 'very hard',
+            reward: 1000
+        },
+        category: 'monster',
+        answers: {
+            a: 'Basilisk',
+            b: 'Tarasque',
+            c: 'Frost Troll'
+        },
+        correctAnswer: 'a',   
+        correctExplain: 'Basilisks are the only monster of the three with the ability to Petrify it\'s opponents, turning it\'s foes to stone.'
+       },
     {
         question: 'How are Beholders said to be born?',
         difficulty: {
