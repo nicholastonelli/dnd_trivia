@@ -11,6 +11,166 @@ let xpChart = [
 let triviaWell = []
 let triviaDeck = [
   {
+    question: "",
+    difficulty: {
+      level: "easy",
+      reward: 25,
+    },
+    category: "",
+    answers: {
+      a: "",
+      b: "",
+      c: "",
+    },
+    correctAnswer: "",
+    correctExplain:
+      "",
+  },
+  {
+    question: "",
+    difficulty: {
+      level: "hard",
+      reward: 500,
+    },
+    category: "",
+    answers: {
+      a: "",
+      b: "",
+      c: "",
+    },
+    correctAnswer: "",
+    correctExplain:
+      "",
+  },
+  {
+    question: "This popular Assassin is condsidered the archrival of Drizz't Do'Urden in the R.A. Salvatore book series.",
+    difficulty: {
+      level: "medium",
+      reward: 100,
+    },
+    category: "faerun",
+    answers: {
+      a: "Mordenkainen",
+      b: "Jarlaxle",
+      c: "Artemis Entreri",
+    },
+    correctAnswer: "c",
+    correctExplain:
+      "Artemis Entreri was a ruthless assassin and the former arch-nemesis of Drizzt Do'Urden. A cunning and tactical assassin, Entreri lived an empty life. He was credited with being one of the most feared and effective assassins in Faerûn.",
+  },
+  {
+    question: "Minsc is a powerful ranger from Rashemaar in the Baldur's Gate series. His tiny companion is believed to be what?",
+    difficulty: {
+      level: "easy",
+      reward: 25,
+    },
+    category: "faerun",
+    answers: {
+      a: "A miniature giant space hamster",
+      b: "A small dragon",
+      c: "A goblin-dog",
+    },
+    correctAnswer: "a",
+    correctExplain:
+      "Minsc was famously known for his habit of talking to a hamster called Boo, whom he believed was a miniature giant space hamster, despite no one else ever witnessing any evidence of this.",
+  },
+  {
+    question: "What is the largest City on the Sword Coast in Faerun?",
+    difficulty: {
+      level: "easy",
+      reward: 25,
+    },
+    category: "faerun",
+    answers: {
+      a: "Waterdeep",
+      b: "Sharn",
+      c: "Baldur's Gate",
+    },
+    correctAnswer: "c",
+    correctExplain:
+      "Baldur's Gate, also called simply the Gate, was the largest metropolis and city-state on the Sword Coast, within the greater Western Heartlands.",
+  },
+  {
+    question: "What is the famous crime lord Xanathar's race?",
+    difficulty: {
+      level: "medium",
+      reward: 25,
+    },
+    category: "faerun",
+    answers: {
+      a: "Vampire",
+      b: "Beholder",
+      c: "Goblin",
+    },
+    correctAnswer: "b",
+    correctExplain:
+      "The Xanathar (pronounced: /ˈzɑːnɑːθɑːr/ ZAN-ah-thar[3]), originally named Kirkesai and previously known as the Eye, was one of the most infamous beholders of the Realms and the crime lord of the Xanathar Thieves' Guild in Skullport.",
+  },
+  {
+    question: "According to the creator of the Forgotten Realms setting, What is the interdimensional meeting place for the three most powerful Wizards in all the settings?",
+    difficulty: {
+      level: "easy",
+      reward: 25,
+    },
+    category: "faerun",
+    answers: {
+      a: "Sigil City, the hub of the Great Wheel",
+      b: "Refuge, the last planet waystation",
+      c: "Ed Greenwood's apartment in Ontario",
+    },
+    correctAnswer: "c",
+    correctExplain:
+      "Acccording to Ed Greenwood, creator of the Forgotten Realms; Mordenkainen the Mage was a good friend of Elminster Aumar; the two met on numerous occasions at Ed Greenwood's house on Earth to exchange news from each other's worlds, as well as spells and lore.On occasion, the two were also joined by Dalamar of Krynn.",
+  },
+  {
+    question: "What is a the name of the magic hammer made by Bruenor Battlehammer for his adopted son, Wulfgar?",
+    difficulty: {
+      level: "hard",
+      reward: 500,
+    },
+    category: "faerun",
+    answers: {
+      a: "Aegis-Fang",
+      b: "Mjolnir",
+      c: "Ukonvasara",
+    },
+    correctAnswer: "a",
+    correctExplain:
+      "Aegis-fang was the weapon of Wulfgar, son of Beornegar. After Wulfgar's servitude to Bruenor Battlehammer was complete, the dwarf-king forged Aegis-fang for his adopted son as a special gift",
+  },
+  {
+    question: "What is a the name of the magic hammer made by Bruenor Battlehammer for his adopted son, Wulfgar?",
+    difficulty: {
+      level: "hard",
+      reward: 500,
+    },
+    category: "faerun",
+    answers: {
+      a: "Aegis-Fang",
+      b: "Mjolnir",
+      c: "Driz'zit D'Urden",
+    },
+    correctAnswer: "a",
+    correctExplain:
+      "Aegis-fang was the weapon of Wulfgar, son of Beornegar. After Wulfgar's servitude to Bruenor Battlehammer was complete, the dwarf-king forged Aegis-fang for his adopted son as a special gift",
+  },
+  {
+    question: "What is a the name of the heroic Drow Ranger popularizad by R.A. Salvatore?",
+    difficulty: {
+      level: "hard",
+      reward: 500,
+    },
+    category: "faerun",
+    answers: {
+      a: "Drist DoUrden",
+      b: "Drizzt Do'Urden",
+      c: "Driz'zit D'Urden",
+    },
+    correctAnswer: "b",
+    correctExplain:
+      "Drizzt Do'Urden (pronounced: /drɪst doʊˈʌrdɛn/ drist doh-URR-den or: /ˈdrɪzɪt doʊˈʌrdʌn/ DRIHZ-it doh-URR-dun), also called Drizzt Daermon N'a'shezbaernon, was a male drow ranger. He was an atypical drow who had forsaken both the evil ways of his people and their home in the Underdark, to become the legendary hero of the North.",
+  },
+  {
     question: "What is a Bulette often called?",
     difficulty: {
       level: "medium",
@@ -404,6 +564,10 @@ let triviaDeck = [
       'In 1974, avid wargamer Gary Gygax and firends created and played the first game of Dungeons and Dragons, an expansion on his previous "Chainmail" wargame. Three volumes of rules were published that year, with only 1,000 copies originally printed.',
   },
 ]
+let eberronDeck = triviaDeck.filter(cat => cat.category == 'eberron')
+let faerunDeck = triviaDeck.filter(cat => cat.category == 'faerun')
+let monsterDeck = triviaDeck.filter(cat => cat.category == 'monster')
+let systemDeck = triviaDeck.filter(cat => cat.category == 'system')
 
 document.querySelector(
   "#qCount"
@@ -454,22 +618,10 @@ function categoryFilter() {
         triviaWell = triviaWell.concat(systemDeck)
         console.log(`The System deck is in play`);
     }
-    
 }
 
 // filter each category into its own array
-let eberronDeck = triviaDeck.filter(cat => cat.category == 'eberron')
-let faerunDeck = triviaDeck.filter(cat => cat.category == 'faerun')
-let monsterDeck = triviaDeck.filter(cat => cat.category == 'monster')
-let systemDeck = triviaDeck.filter(cat => cat.category == 'system')
 
-
-// concatenate each array together to a new array
-
-/* triviaWell = triviaWell.concat(eberronDeck)
-triviaWell = triviaWell.concat(monsterDeck)
-triviaWell = triviaWell.concat(faerunDeck)
-triviaWell = triviaWell.concat(systemDeck) */
 
 // set that array as TriviaWell before the shuffle
 
@@ -606,9 +758,6 @@ document.querySelector('#resetBtn').addEventListener('click', () => {
     document.querySelector('#modal').style.display = 'none'
     document.querySelector("#openingModal").style.display = "block"
 })
-
-// FUN STUFF
-
 // The scroll modal animation
 
 // The fire! Onhover, the button and fireimg should change opacity to simulate a flicker
