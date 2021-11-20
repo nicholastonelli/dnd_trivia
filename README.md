@@ -168,6 +168,7 @@ Project Link: [https://github.com/nicholastonelli/dnd_trivia](https://github.com
 <p align="right">(<a href="#top">back to top</a>)</p>
 
 <!-- WIREFRAMES -->
+## Wireframes
 
 <img src="images/wireframes.jpeg" alt="wireframes">
 
