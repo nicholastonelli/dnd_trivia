@@ -43,7 +43,8 @@ let triviaDeck = [
       "Of all the terrors created by foul sorcery, gibbering mouthers are among the worst. This creature is the composite eyes, mouths, and liquefied matter of it's former victims.",
   },
   {
-    question: "According to \"The Ordning\", what kind of Giant is most important?",
+    question:
+      'According to "The Ordning", what kind of Giant is most important?',
     difficulty: {
       level: "easy",
       reward: 25,
@@ -59,7 +60,8 @@ let triviaDeck = [
       "Giants of Faerun belong to a rigid caste system, of which Storm Giants are the highest.",
   },
   {
-    question: "Ghosts are the undead souls of a once living creature, that wander between the material plane and another. Which plane is this?",
+    question:
+      "Ghosts are the undead souls of a once living creature, that wander between the material plane and another. Which plane is this?",
     difficulty: {
       level: "medium",
       reward: 100,
@@ -75,7 +77,8 @@ let triviaDeck = [
       "Ghosts are tied to both the material plane and the Ethereal Plance, and wander easily between the two.",
   },
   {
-    question: "Of the four kinds of Genies in Dungeons and Dragons, one has no mythological origin, and was made for D&D. Is it the...",
+    question:
+      "Of the four kinds of Genies in Dungeons and Dragons, one has no mythological origin, and was made for D&D. Is it the...",
     difficulty: {
       level: "very hard",
       reward: 1000,
@@ -91,7 +94,8 @@ let triviaDeck = [
       "While Djinn, Marid, and Efreeti are all inspired from Arabic and Middle Eastern mythology, Dao were made up to fit the elemental theme.",
   },
   {
-    question: "Monsterous Gargoyles often guard dark towers and manors, inert and menacing until they attack.",
+    question:
+      "Monsterous Gargoyles often guard dark towers and manors, inert and menacing until they attack.",
     difficulty: {
       level: "easy",
       reward: 25,
@@ -121,7 +125,7 @@ let triviaDeck = [
     correctAnswer: "a",
     correctExplain:
       "An Ettin is a foul, two-headed giant with the characteristics of an orc. The twin heads of an Ettin each have their own personality.",
-  },  
+  },
   {
     question: "What is the element of a Bronze Dragon's breath weapon attack",
     difficulty: {
@@ -132,7 +136,7 @@ let triviaDeck = [
     answers: {
       a: "Lightning",
       b: "Fire",
-      c: "Necrotic"
+      c: "Necrotic",
     },
     correctAnswer: "a",
     correctExplain:
@@ -148,11 +152,10 @@ let triviaDeck = [
     answers: {
       a: "Cold",
       b: "Fire",
-      c: "Poison"
+      c: "Poison",
     },
     correctAnswer: "c",
-    correctExplain:
-      "Green Dragons can breathe a poisonous cloud as an attack.",
+    correctExplain: "Green Dragons can breathe a poisonous cloud as an attack.",
   },
   {
     question: "What does a displacer beast displace?",
@@ -203,7 +206,8 @@ let triviaDeck = [
       "Lord Soth was a human knight who fell to evil ways. His infamy is such that if you look up Death Knight in the Monster Manual, the picture is him.",
   },
   {
-    question: "In 5e, a cockatrice has bitten your comrade, and turned them to stone! What is the easiest way to turn them back?",
+    question:
+      "In 5e, a cockatrice has bitten your comrade, and turned them to stone! What is the easiest way to turn them back?",
     difficulty: {
       level: "hard",
       reward: 100,
@@ -219,7 +223,8 @@ let triviaDeck = [
       "The bite of a cockatrice only petrifies it's foes for 24 hours, so the easiest way to turn them back is simply to wait it out.",
   },
   {
-    question: "What is the best way to avoid being caught by a Carrion Crawler?",
+    question:
+      "What is the best way to avoid being caught by a Carrion Crawler?",
     difficulty: {
       level: "medium",
       reward: 100,
@@ -235,7 +240,8 @@ let triviaDeck = [
       "Carrion Crawlers are enormous wormlike monstrosities that live in caves. They can see in the dark and climb on ceilings, and they have an incredible sense of smell for tracking down prey.",
   },
   {
-    question: "In Arthurian folklore, the Wizard Merlin is the child of a demon and a human. What would he be in 5th edition?",
+    question:
+      "In Arthurian folklore, the Wizard Merlin is the child of a demon and a human. What would he be in 5th edition?",
     difficulty: {
       level: "hard",
       reward: 500,
@@ -283,7 +289,8 @@ let triviaDeck = [
       "Bugbears are giant, hairy, feral goblins known for brute strength. They first appeared in the First Edition of Dungeons and Dragons.",
   },
   {
-    question: "Hags are witchlike, evil monsters that delight in cruelty. What type of monster are they?",
+    question:
+      "Hags are witchlike, evil monsters that delight in cruelty. What type of monster are they?",
     difficulty: {
       level: "medium",
       reward: 100,
@@ -299,7 +306,8 @@ let triviaDeck = [
       "Hags are witches of ancient origin tied to the feywild. They are a kind of Fey, or Fairy.",
   },
   {
-    question: "An Androsphynx lies before you, blocking the way into a dungeon. It poses a riddle to you, which you'd rather not guess at, and if you get it wrong it attacks. Which of these options has the BEST chance of success?",
+    question:
+      "An Androsphynx lies before you, blocking the way into a dungeon. It poses a riddle to you, which you'd rather not guess at, and if you get it wrong it attacks. Which of these options has the BEST chance of success?",
     difficulty: {
       level: "hard",
       reward: 500,
@@ -315,7 +323,8 @@ let triviaDeck = [
       "Androsphinxes are Inscrutable, which means their thoughts and emotions cannot be read by any effect, magical or otherwise.",
   },
   {
-    question: "This popular Assassin is condsidered the archrival of Drizz't Do'Urden in the R.A. Salvatore book series.",
+    question:
+      "This popular Assassin is condsidered the archrival of Drizz't Do'Urden in the R.A. Salvatore book series.",
     difficulty: {
       level: "medium",
       reward: 100,
@@ -331,7 +340,8 @@ let triviaDeck = [
       "Artemis Entreri was a ruthless assassin and the former arch-nemesis of Drizzt Do'Urden. A cunning and tactical assassin, Entreri lived an empty life. He was credited with being one of the most feared and effective assassins in Faerûn.",
   },
   {
-    question: "Minsc is a powerful ranger from Rashemaar in the Baldur's Gate series. His tiny companion is believed to be what?",
+    question:
+      "Minsc is a powerful ranger from Rashemaar in the Baldur's Gate series. His tiny companion is believed to be what?",
     difficulty: {
       level: "easy",
       reward: 25,
@@ -379,7 +389,8 @@ let triviaDeck = [
       "The Xanathar (pronounced: /ˈzɑːnɑːθɑːr/ ZAN-ah-thar[3]), originally named Kirkesai and previously known as the Eye, was one of the most infamous beholders of the Realms and the crime lord of the Xanathar Thieves' Guild in Skullport.",
   },
   {
-    question: "According to the creator of the Forgotten Realms setting, What is the interdimensional meeting place for the three most powerful Wizards in all the settings?",
+    question:
+      "According to the creator of the Forgotten Realms setting, What is the interdimensional meeting place for the three most powerful Wizards in all the settings?",
     difficulty: {
       level: "easy",
       reward: 25,
@@ -395,7 +406,8 @@ let triviaDeck = [
       "Acccording to Ed Greenwood, creator of the Forgotten Realms; Mordenkainen the Mage was a good friend of Elminster Aumar; the two met on numerous occasions at Ed Greenwood's house on Earth to exchange news from each other's worlds, as well as spells and lore.On occasion, the two were also joined by Dalamar of Krynn.",
   },
   {
-    question: "What is a the name of the magic hammer made by Bruenor Battlehammer for his adopted son, Wulfgar?",
+    question:
+      "What is a the name of the magic hammer made by Bruenor Battlehammer for his adopted son, Wulfgar?",
     difficulty: {
       level: "hard",
       reward: 500,
@@ -411,7 +423,8 @@ let triviaDeck = [
       "Aegis-fang was the weapon of Wulfgar, son of Beornegar. After Wulfgar's servitude to Bruenor Battlehammer was complete, the dwarf-king forged Aegis-fang for his adopted son as a special gift",
   },
   {
-    question: "What is a the name of the magic hammer made by Bruenor Battlehammer for his adopted son, Wulfgar?",
+    question:
+      "What is a the name of the magic hammer made by Bruenor Battlehammer for his adopted son, Wulfgar?",
     difficulty: {
       level: "hard",
       reward: 500,
@@ -427,7 +440,8 @@ let triviaDeck = [
       "Aegis-fang was the weapon of Wulfgar, son of Beornegar. After Wulfgar's servitude to Bruenor Battlehammer was complete, the dwarf-king forged Aegis-fang for his adopted son as a special gift",
   },
   {
-    question: "What is a the name of the heroic Drow Ranger popularizad by R.A. Salvatore?",
+    question:
+      "What is a the name of the heroic Drow Ranger popularizad by R.A. Salvatore?",
     difficulty: {
       level: "hard",
       reward: 500,
@@ -836,10 +850,10 @@ let triviaDeck = [
       'In 1974, avid wargamer Gary Gygax and firends created and played the first game of Dungeons and Dragons, an expansion on his previous "Chainmail" wargame. Three volumes of rules were published that year, with only 1,000 copies originally printed.',
   },
 ]
-let eberronDeck = triviaDeck.filter(cat => cat.category == 'eberron')
-let faerunDeck = triviaDeck.filter(cat => cat.category == 'faerun')
-let monsterDeck = triviaDeck.filter(cat => cat.category == 'monster')
-let systemDeck = triviaDeck.filter(cat => cat.category == 'system')
+let eberronDeck = triviaDeck.filter((cat) => cat.category == "eberron")
+let faerunDeck = triviaDeck.filter((cat) => cat.category == "faerun")
+let monsterDeck = triviaDeck.filter((cat) => cat.category == "monster")
+let systemDeck = triviaDeck.filter((cat) => cat.category == "system")
 
 document.querySelector(
   "#qCount"
@@ -872,31 +886,21 @@ function handleSubmitEvent() {
 }
 
 // categoryFilter() filters out items by category before the shuffle
-
-function categoryFilter() {
-    if (document.querySelector('#eberron').checked) {
-        triviaWell = triviaWell.concat(eberronDeck)
-        console.log(`The Ebberon deck is in play`)
-    }
-    if (document.querySelector('#faerun').checked) {
-        triviaWell = triviaWell.concat(faerunDeck)
-        console.log(`The Faerun deck is in play`)
-    }
-    if (document.querySelector('#monster').checked) {
-        triviaWell = triviaWell.concat(monsterDeck)
-        console.log(`The Monster deck is in play`)
-    }
-    if (document.querySelector('#system').checked) {
-        triviaWell = triviaWell.concat(systemDeck)
-        console.log(`The System deck is in play`);
-    }
-}
-
-// filter each category into its own array
-
-
 // set that array as TriviaWell before the shuffle
-
+function categoryFilter() {
+  if (document.querySelector("#eberron").checked) {
+    triviaWell = triviaWell.concat(eberronDeck)
+  }
+  if (document.querySelector("#faerun").checked) {
+    triviaWell = triviaWell.concat(faerunDeck)
+  }
+  if (document.querySelector("#monster").checked) {
+    triviaWell = triviaWell.concat(monsterDeck)
+  }
+  if (document.querySelector("#system").checked) {
+    triviaWell = triviaWell.concat(systemDeck)
+  }
+}
 // cardDeck() checks the % of questions remaining and changes the deck1 and deck2 images, increasing the deck1 and decreasing the deck2
 
 function cardDeck() {
@@ -932,7 +936,6 @@ function cardDeck() {
       "<img src='images/cards1.png' alt='second deck'  class='decks'  id='deckImg2'></img>"
   }
 }
-
 // answerCheck() checks the form input against triviaWell[0].correctAnswer
 
 function answerCheck() {
@@ -1010,10 +1013,10 @@ function wellChecker() {
     document.querySelector("#a").innerText = ""
     document.querySelector("#b").innerText = ""
     document.querySelector("#c").innerText = ""
-    document.querySelector('#qForm').style.display = 'none'
-    document.querySelector('#submitBtn').style.display = 'none'
-    document.querySelector('#closeBtn').style.display = 'block'
-    document.querySelector('#resetBtn').style.display = 'block'
+    document.querySelector("#qForm").style.display = "none"
+    document.querySelector("#submitBtn").style.display = "none"
+    document.querySelector("#closeBtn").style.display = "block"
+    document.querySelector("#resetBtn").style.display = "block"
   }
 }
 
@@ -1023,12 +1026,11 @@ document
   .querySelector("#closeOpenerBtn")
   .addEventListener("click", handleStartEvent)
 
-  
-document.querySelector('#resetBtn').addEventListener('click', () => {
-    document.querySelector('#qForm').style.display = 'block'
-    document.querySelector('#resetBtn').style.display = 'none'
-    document.querySelector('#modal').style.display = 'none'
-    document.querySelector("#openingModal").style.display = "block"
+document.querySelector("#resetBtn").addEventListener("click", () => {
+  document.querySelector("#qForm").style.display = "block"
+  document.querySelector("#resetBtn").style.display = "none"
+  document.querySelector("#modal").style.display = "none"
+  document.querySelector("#openingModal").style.display = "block"
 })
 
 // Fire animation effects. Fire should do SOMETHING when clicked, and when mouseovered

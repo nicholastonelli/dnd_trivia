@@ -4,8 +4,8 @@
 [![Forks][forks-shield]][forks-url]
 [![Stargazers][stars-shield]][stars-url]
 [![Issues][issues-shield]][issues-url]
-[![SRD License][license-shield]][https://media.wizards.com/2016/downloads/DND/SRD-OGL_V5.1.pdf]
-[![LinkedIn][linkedin-shield]][https://www.linkedin.com/in/nicholas-tonelli/]
+[![MIT License][license-shield]][license-url]
+[![LinkedIn][linkedin-shield]][linkedin-url]
 
 
 
@@ -19,16 +19,16 @@
 <h3 align="center">Dnd_trivia_game</h3>
 
   <p align="center">
-    project_description
+    A deck based digital trivia game to test your Dungeons and Dragons Knowhow.
     <br />
-    <a href="https://github.com/github_username/repo_name"><strong>Explore the docs »</strong></a>
+    <a href="https://github.com/nicholastonelli/dnd_trivia"><strong>Explore the docs »</strong></a>
     <br />
     <br />
-    <a href="https://github.com/github_username/repo_name">View Demo</a>
+    <a href="https://github.com/nicholastonelli/dnd_trivia">View Demo</a>
     ·
-    <a href="https://github.com/github_username/repo_name/issues">Report Bug</a>
+    <a href="https://github.com/nicholastonelli/dnd_trivia/issues">Report Bug</a>
     ·
-    <a href="https://github.com/github_username/repo_name/issues">Request Feature</a>
+    <a href="https://github.com/nicholastonelli/dnd_trivia/issues">Request Feature</a>
   </p>
 </div>
 
@@ -100,7 +100,7 @@ This is an example of how to list things you need to use the software and how to
 1. Get a free API Key at [https://example.com](https://example.com)
 2. Clone the repo
    ```sh
-   git clone https://github.com/github_username/repo_name.git
+   git clone https://github.com/nicholastonelli/dnd_trivia.git
    ```
 3. Install NPM packages
    ```sh
@@ -134,7 +134,7 @@ _For more examples, please refer to the [Documentation](https://example.com)_
 - [] Feature 3
     - [] Nested Feature
 
-See the [open issues](https://github.com/github_username/repo_name/issues) for a full list of proposed features (and known issues).
+See the [open issues](https://github.com/nicholastonelli/dnd_trivia/issues) for a full list of proposed features (and known issues).
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
@@ -191,16 +191,16 @@ Project Link: [https://github.com/nicholastonelli/dnd_trivia](https://github.com
 
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
-[contributors-shield]: https://img.shields.io/github/contributors/github_username/repo_name.svg?style=for-the-badge
-[contributors-url]: https://github.com/github_username/repo_name/graphs/contributors
-[forks-shield]: https://img.shields.io/github/forks/github_username/repo_name.svg?style=for-the-badge
-[forks-url]: https://github.com/github_username/repo_name/network/members
-[stars-shield]: https://img.shields.io/github/stars/github_username/repo_name.svg?style=for-the-badge
-[stars-url]: https://github.com/github_username/repo_name/stargazers
-[issues-shield]: https://img.shields.io/github/issues/github_username/repo_name.svg?style=for-the-badge
-[issues-url]: https://github.com/github_username/repo_name/issues
-[license-shield]: https://img.shields.io/github/license/github_username/repo_name.svg?style=for-the-badge
-[license-url]: https://github.com/github_username/repo_name/blob/master/LICENSE.txt
+[contributors-shield]: https://img.shields.io/github/contributors/nicholastonelli/dnd_trivia.svg?style=for-the-badge
+[contributors-url]: https://github.com/nicholastonelli/dnd_trivia/graphs/contributors
+[forks-shield]: https://img.shields.io/github/forks/nicholastonelli/dnd_trivia.svg?style=for-the-badge
+[forks-url]: https://github.com/nicholastonelli/dnd_trivia/network/members
+[stars-shield]: https://img.shields.io/github/stars/nicholastonelli/dnd_trivia.svg?style=for-the-badge
+[stars-url]: https://github.com/nicholastonelli/dnd_trivia/stargazers
+[issues-shield]: https://img.shields.io/github/issues/nicholastonelli/dnd_trivia.svg?style=for-the-badge
+[issues-url]: https://github.com/gnicholastonelli/dnd_trivia/issues
+[license-shield]: https://img.shields.io/github/license/nicholastonelli/dnd_trivia.svg?style=for-the-badge
+[license-url]: https://github.com/nicholastonelli/dnd_trivia/blob/master/LICENSE.txt
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
 [linkedin-url]: https://linkedin.com/in/nicholas-tonelli-9b9000226/
 [product-screenshot]: images/screenshot.png
