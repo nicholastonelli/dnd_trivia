@@ -225,7 +225,7 @@ input {
   }
   #levelDiv {
     margin-top: 50px;
-    position: absolute;
+    position: relative;
     bottom: 0px;
   }
   #modal,
