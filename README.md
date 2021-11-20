@@ -56,7 +56,7 @@
     <li><a href="#contributing">Contributing</a></li>
     <li><a href="#license">License</a></li>
     <li><a href="#contact">Contact</a></li>
-    <li><a href="#acknowledgments">Acknowledgments</a></li>
+    <li><a href="#userstories">User Stories</a></li>
   </ol>
 </details>
 
@@ -157,6 +157,21 @@ Project Link: [https://github.com/nicholastonelli/dnd_trivia](https://github.com
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
+<!-- USER STORIES -->
+## User Stories
+
+* As a user, I should be able to assemble my pool of questions from categories
+* As a user, I should be able to reset the game after finishing all questions.
+* As a user, I should be given a score based on my performance.
+* As a user, I should be able to answer questions with a range of options. 
+
+<p align="right">(<a href="#top">back to top</a>)</p>
+
+<!-- WIREFRAMES -->
+
+<img src="images/wireframes.jpg" alt="Logo" width="400">
+
+<p align="right">(<a href="#top">back to top</a>)</p>
 
 
 <!-- MARKDOWN LINKS & IMAGES -->
