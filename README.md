@@ -4,8 +4,8 @@
 [![Forks][forks-shield]][forks-url]
 [![Stargazers][stars-shield]][stars-url]
 [![Issues][issues-shield]][issues-url]
-[![MIT License][license-shield]][license-url]
-[![LinkedIn][linkedin-shield]][linkedin-url]
+[![SRD License][license-shield]][https://media.wizards.com/2016/downloads/DND/SRD-OGL_V5.1.pdf]
+[![LinkedIn][linkedin-shield]][https://www.linkedin.com/in/nicholas-tonelli/]
 
 
 

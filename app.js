@@ -10,7 +10,7 @@ let xpChart = [
 ]
 let triviaWell = []
 let triviaDeck = [
-  {
+  /* {
     question: "",
     difficulty: {
       level: "easy",
@@ -25,22 +25,294 @@ let triviaDeck = [
     correctAnswer: "",
     correctExplain:
       "",
-  },
+  }, */
   {
-    question: "",
+    question: "How many mouths does a Gibbering Mouther have?",
     difficulty: {
       level: "hard",
       reward: 500,
     },
-    category: "",
+    category: "monster",
     answers: {
-      a: "",
-      b: "",
-      c: "",
+      a: "none, and they must scream",
+      b: "infinite",
+      c: "as many as victims",
     },
-    correctAnswer: "",
+    correctAnswer: "c",
     correctExplain:
-      "",
+      "Of all the terrors created by foul sorcery, gibbering mouthers are among the worst. This creature is the composite eyes, mouths, and liquefied matter of it's former victims.",
+  },
+  {
+    question: "According to \"The Ordning\", what kind of Giant is most important?",
+    difficulty: {
+      level: "easy",
+      reward: 25,
+    },
+    category: "faerun",
+    answers: {
+      a: "Hill Giants",
+      b: "Cloud Giants",
+      c: "Storm Giants",
+    },
+    correctAnswer: "c",
+    correctExplain:
+      "Giants of Faerun belong to a rigid caste system, of which Storm Giants are the highest.",
+  },
+  {
+    question: "Ghosts are the undead souls of a once living creature, that wander between the material plane and another. Which plane is this?",
+    difficulty: {
+      level: "medium",
+      reward: 100,
+    },
+    category: "monster",
+    answers: {
+      a: "The Etheral Plane",
+      b: "The Shadow Plane",
+      c: "The Air Plane",
+    },
+    correctAnswer: "a",
+    correctExplain:
+      "Ghosts are tied to both the material plane and the Ethereal Plance, and wander easily between the two.",
+  },
+  {
+    question: "Of the four kinds of Genies in Dungeons and Dragons, one has no mythological origin, and was made for D&D. Is it the...",
+    difficulty: {
+      level: "very hard",
+      reward: 1000,
+    },
+    category: "monster",
+    answers: {
+      a: "Marid",
+      b: "Efreeti",
+      c: "Dao",
+    },
+    correctAnswer: "c",
+    correctExplain:
+      "While Djinn, Marid, and Efreeti are all inspired from Arabic and Middle Eastern mythology, Dao were made up to fit the elemental theme.",
+  },
+  {
+    question: "Monsterous Gargoyles often guard dark towers and manors, inert and menacing until they attack.",
+    difficulty: {
+      level: "easy",
+      reward: 25,
+    },
+    category: "monster",
+    answers: {
+      a: "Construct",
+      b: "Elemental",
+      c: "Fiend",
+    },
+    correctAnswer: "b",
+    correctExplain:
+      "Gargoyles are born, not made, as Elemental Monsters. They originate from Ogremoch, a powerful evil earth elemental.",
+  },
+  {
+    question: "How many heads does an Ettin have?",
+    difficulty: {
+      level: "easy",
+      reward: 25,
+    },
+    category: "monster",
+    answers: {
+      a: "Two",
+      b: "Three",
+      c: "Twelve",
+    },
+    correctAnswer: "a",
+    correctExplain:
+      "An Ettin is a foul, two-headed giant with the characteristics of an orc. The twin heads of an Ettin each have their own personality.",
+  },  
+  {
+    question: "What is the element of a Bronze Dragon's breath weapon attack",
+    difficulty: {
+      level: "medium",
+      reward: 100,
+    },
+    category: "monster",
+    answers: {
+      a: "Lightning",
+      b: "Fire",
+      c: "Necrotic"
+    },
+    correctAnswer: "a",
+    correctExplain:
+      "Bronze Dragons can breathe a poisonous cloud as an attack.",
+  },
+  {
+    question: "What is the element of a Green Dragon's breath weapon attack",
+    difficulty: {
+      level: "medium",
+      reward: 100,
+    },
+    category: "monster",
+    answers: {
+      a: "Cold",
+      b: "Fire",
+      c: "Poison"
+    },
+    correctAnswer: "c",
+    correctExplain:
+      "Green Dragons can breathe a poisonous cloud as an attack.",
+  },
+  {
+    question: "What does a displacer beast displace?",
+    difficulty: {
+      level: "easy",
+      reward: 25,
+    },
+    category: "monster",
+    answers: {
+      a: "weapons that strike it",
+      b: "it's own image",
+      c: "your party members",
+    },
+    correctAnswer: "b",
+    correctExplain:
+      "Displacer Beasts can project a magical illusion that makes it appear to be standing near it's actual location, but not quite. The difference is enough to make fighting them difficult.",
+  },
+  {
+    question: "How do you kill a Lich?",
+    difficulty: {
+      level: "hard",
+      reward: 500,
+    },
+    category: "monster",
+    answers: {
+      a: "kill it with fire",
+      b: "cut off it's head",
+      c: "destroy it's phylactery",
+    },
+    correctAnswer: "c",
+    correctExplain:
+      "A phylcatery is a magical token that holds a Lich's soul. As long as it exists, you cannot fully kill a Lich.",
+  },
+  {
+    question: "Who is the most famous Death Knight?",
+    difficulty: {
+      level: "medium",
+      reward: 25,
+    },
+    category: "monster",
+    answers: {
+      a: "Lord Soth",
+      b: "Count Strahd Von Zarovich",
+      c: "Zagig Yragerne",
+    },
+    correctAnswer: "a",
+    correctExplain:
+      "Lord Soth was a human knight who fell to evil ways. His infamy is such that if you look up Death Knight in the Monster Manual, the picture is him.",
+  },
+  {
+    question: "In 5e, a cockatrice has bitten your comrade, and turned them to stone! What is the easiest way to turn them back?",
+    difficulty: {
+      level: "hard",
+      reward: 100,
+    },
+    category: "monster",
+    answers: {
+      a: "hire a wizard for great expense",
+      b: "quest for a magical scroll",
+      c: "go drinking, and kill some time",
+    },
+    correctAnswer: "c",
+    correctExplain:
+      "The bite of a cockatrice only petrifies it's foes for 24 hours, so the easiest way to turn them back is simply to wait it out.",
+  },
+  {
+    question: "What is the best way to avoid being caught by a Carrion Crawler?",
+    difficulty: {
+      level: "medium",
+      reward: 100,
+    },
+    category: "monster",
+    answers: {
+      a: "Move in the Dark",
+      b: "Bathe Regularly",
+      c: "Climb on the ceiling",
+    },
+    correctAnswer: "b",
+    correctExplain:
+      "Carrion Crawlers are enormous wormlike monstrosities that live in caves. They can see in the dark and climb on ceilings, and they have an incredible sense of smell for tracking down prey.",
+  },
+  {
+    question: "In Arthurian folklore, the Wizard Merlin is the child of a demon and a human. What would he be in 5th edition?",
+    difficulty: {
+      level: "hard",
+      reward: 500,
+    },
+    category: "monster",
+    answers: {
+      a: "A Cambion",
+      b: "A Tiefling",
+      c: "A Tanar'ri",
+    },
+    correctAnswer: "a",
+    correctExplain:
+      "Cambions are known as half-fiends, the child of a human and fiend parent. Tieflings have distance fiend ancestry, and Tanar'ri are full blooded demons.",
+  },
+  {
+    question: "What are Bullywugs?",
+    difficulty: {
+      level: "easy",
+      reward: 25,
+    },
+    category: "monster",
+    answers: {
+      a: "frog-people",
+      b: "fish-people",
+      c: "shark-people",
+    },
+    correctAnswer: "a",
+    correctExplain:
+      "Bullywugs were a primitive race of frog-like humanoids found throughout the bogs and marshes of Toril, the self-proclaimed lords of the swamp.",
+  },
+  {
+    question: "What edition of D&D did Bugbears first appear in?",
+    difficulty: {
+      level: "easy",
+      reward: 25,
+    },
+    category: "monster",
+    answers: {
+      a: "1st Edition",
+      b: "3rd Edition",
+      c: "5th Edition",
+    },
+    correctAnswer: "a",
+    correctExplain:
+      "Bugbears are giant, hairy, feral goblins known for brute strength. They first appeared in the First Edition of Dungeons and Dragons.",
+  },
+  {
+    question: "Hags are witchlike, evil monsters that delight in cruelty. What type of monster are they?",
+    difficulty: {
+      level: "medium",
+      reward: 100,
+    },
+    category: "monster",
+    answers: {
+      a: "Fey",
+      b: "Undead",
+      c: "Aberration",
+    },
+    correctAnswer: "a",
+    correctExplain:
+      "Hags are witches of ancient origin tied to the feywild. They are a kind of Fey, or Fairy.",
+  },
+  {
+    question: "An Androsphynx lies before you, blocking the way into a dungeon. It poses a riddle to you, which you'd rather not guess at, and if you get it wrong it attacks. Which of these options has the BEST chance of success?",
+    difficulty: {
+      level: "hard",
+      reward: 500,
+    },
+    category: "monster",
+    answers: {
+      a: "use a magic spell to read the Sphynx's thoughts, and get the answer",
+      b: "use a spyglass to read the Sphynx's book of riddles, which is hopefully nearby",
+      c: "use a psionic ability to read the Sphynx's emotions, and see if you're close to the answer",
+    },
+    correctAnswer: "b",
+    correctExplain:
+      "Androsphinxes are Inscrutable, which means their thoughts and emotions cannot be read by any effect, magical or otherwise.",
   },
   {
     question: "This popular Assassin is condsidered the archrival of Drizz't Do'Urden in the R.A. Salvatore book series.",
@@ -758,9 +1030,6 @@ document.querySelector('#resetBtn').addEventListener('click', () => {
     document.querySelector('#modal').style.display = 'none'
     document.querySelector("#openingModal").style.display = "block"
 })
-// The scroll modal animation
-
-// The fire! Onhover, the button and fireimg should change opacity to simulate a flicker
 
 // Fire animation effects. Fire should do SOMETHING when clicked, and when mouseovered
 document.querySelector("#fire").addEventListener("click", () => {
