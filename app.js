@@ -27,6 +27,21 @@ let triviaDeck = [
       "",
   }, */
   {
+    question: "Who created the Forgotten Realms campaign setting?",
+    difficulty: {
+      level: "easy",
+      reward: 25,
+    },
+    category: "",
+    answers: {
+      a: "Gary Gygax",
+      b: "Ed Greenwood",
+      c: "R.A. Salvatore",
+    },
+    correctAnswer: "b",
+    correctExplain: "While Gary Gygax created D&D, and R.A. Salvatore is the most famous author in the Forgotten Realms series, it was Ed Greenwood that created it.",
+  },
+  {
     question: "How many mouths does a Gibbering Mouther have?",
     difficulty: {
       level: "hard",
@@ -95,7 +110,7 @@ let triviaDeck = [
   },
   {
     question:
-      "Monsterous Gargoyles often guard dark towers and manors, inert and menacing until they attack.",
+      "Monsterous Gargoyles often guard dark towers and manors, inert and menacing until they attack. What kind of monster are they?",
     difficulty: {
       level: "easy",
       reward: 25,
@@ -139,8 +154,7 @@ let triviaDeck = [
       c: "Necrotic",
     },
     correctAnswer: "a",
-    correctExplain:
-      "Bronze Dragons can breathe a poisonous cloud as an attack.",
+    correctExplain: "Bronze Dragons can breathe a lightning bolt as an attack.",
   },
   {
     question: "What is the element of a Green Dragon's breath weapon attack",
@@ -417,23 +431,6 @@ let triviaDeck = [
       a: "Aegis-Fang",
       b: "Mjolnir",
       c: "Ukonvasara",
-    },
-    correctAnswer: "a",
-    correctExplain:
-      "Aegis-fang was the weapon of Wulfgar, son of Beornegar. After Wulfgar's servitude to Bruenor Battlehammer was complete, the dwarf-king forged Aegis-fang for his adopted son as a special gift",
-  },
-  {
-    question:
-      "What is a the name of the magic hammer made by Bruenor Battlehammer for his adopted son, Wulfgar?",
-    difficulty: {
-      level: "hard",
-      reward: 500,
-    },
-    category: "faerun",
-    answers: {
-      a: "Aegis-Fang",
-      b: "Mjolnir",
-      c: "Driz'zit D'Urden",
     },
     correctAnswer: "a",
     correctExplain:
@@ -948,7 +945,7 @@ function answerCheck() {
     playerScore += Math.floor(
       triviaWell[0].difficulty.reward * (1 + playerLevel / 10)
     )
-    document.querySelector("#score").innerText = `000${playerScore}`
+    document.querySelector("#score").innerText = `0${playerScore}`
   } else {
     answerMsg.style.color = "red"
     answerMsg.innerText = "That's not quite right."

@@ -13,7 +13,7 @@
 <br />
 <div align="center">
   <a href="https://github.com/nicholastonelli/dnd_trivia">
-    <img src="images/logo.png" alt="Logo" width="80" height="80">
+    <img src="images/ampersand.png" alt="Logo" width="80" height="80">
   </a>
 
 <h3 align="center">Dnd_trivia_game</h3>
@@ -85,13 +85,6 @@ This is a Dungeons and Dragons trivia game. Select categories, and answer questi
 
 Fork this repo or open <a href='https://nicholastonelli.github.io/dnd_trivia/'>here</a>.
 
-### Prerequisites
-
-This is an example of how to list things you need to use the software and how to install them.
-* npm
-  ```sh
-  npm install npm@latest -g
-  ```
 
 ### Installation
 
@@ -119,10 +112,9 @@ Use this project as a pastime with friends, to test your knowledge, or discover 
 <!-- ROADMAP -->
 ## Roadmap
 
-- [] Feature 1
-- [] Feature 2
-- [] Feature 3
-    - [] Nested Feature
+- [] Scroll Modal Animation
+- [] Radio Button Styling
+- [] 
 
 See the [open issues](https://github.com/nicholastonelli/dnd_trivia/issues) for a full list of proposed features (and known issues).
 
@@ -163,17 +155,6 @@ Distributed under the OGL and SRD License. See `LICENSE.txt` for more informatio
 Nicholas Tonelli- nicholasevantonelli@gmail.com
 
 Project Link: [https://github.com/nicholastonelli/dnd_trivia](https://github.com/nicholastonelli/dnd_trivia)
-
-<p align="right">(<a href="#top">back to top</a>)</p>
-
-
-
-<!-- ACKNOWLEDGMENTS -->
-## Acknowledgments
-
-* [](Billie Heidelberg)
-* [](Paresh Sharma)
-* [](Matt Keane)
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
