@@ -13,7 +13,7 @@
 <br />
 <div align="center">
   <a href="https://github.com/nicholastonelli/dnd_trivia">
-    <img src="images/ampersand.png" alt="Logo" width="80" height="80">
+    <img src="images/dndbackground.png" alt="Logo" width="80" height="80">
   </a>
 
 <h3 align="center">Dnd_trivia_game</h3>
@@ -104,7 +104,6 @@ Fork this repo or open <a href='https://nicholastonelli.github.io/dnd_trivia/'>h
 Use this project as a pastime with friends, to test your knowledge, or discover some rare triva about dugeons and dragons. Click on the bonfire to light things up.
 
 
-
 <p align="right">(<a href="#top">back to top</a>)</p>
 
 
@@ -114,7 +113,7 @@ Use this project as a pastime with friends, to test your knowledge, or discover 
 
 - [] Scroll Modal Animation
 - [] Radio Button Styling
-- [] 
+- [] Radio blank defaulting
 
 See the [open issues](https://github.com/nicholastonelli/dnd_trivia/issues) for a full list of proposed features (and known issues).
 
