@@ -67,15 +67,14 @@
 
 [![Product Name Screen Shot][product-screenshot]](https://example.com)
 
-Here's a blank template to get started: To avoid retyping too much info. Do a search and replace with your text editor for the following: `github_username`, `repo_name`, `twitter_handle`, `linkedin_username`, `email`, `email_client`, `project_title`, `project_description`
+This is a Dungeons and Dragons trivia game. Select categories, and answer questions about Dungeons and Dragons, monsters, Campaign settings, and more!
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
 
-
 ### Built With
 
-* [javascript]
+* [javascript, html, and css]
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
@@ -84,8 +83,7 @@ Here's a blank template to get started: To avoid retyping too much info. Do a se
 <!-- GETTING STARTED -->
 ## Getting Started
 
-This is an example of how you may give instructions on setting up your project locally.
-To get a local copy up and running follow these simple example steps.
+Fork this repo or open <a href='https://nicholastonelli.github.io/dnd_trivia/'>here</a>.
 
 ### Prerequisites
 
@@ -97,18 +95,10 @@ This is an example of how to list things you need to use the software and how to
 
 ### Installation
 
-1. Get a free API Key at [https://example.com](https://example.com)
-2. Clone the repo
+
+1. Clone the repo
    ```sh
    git clone https://github.com/nicholastonelli/dnd_trivia.git
-   ```
-3. Install NPM packages
-   ```sh
-   npm install
-   ```
-4. Enter your API in `config.js`
-   ```js
-   const API_KEY = 'ENTER YOUR API';
    ```
 
 <p align="right">(<a href="#top">back to top</a>)</p>
@@ -118,9 +108,9 @@ This is an example of how to list things you need to use the software and how to
 <!-- USAGE EXAMPLES -->
 ## Usage
 
-Use this space to show useful examples of how a project can be used. Additional screenshots, code examples and demos work well in this space. You may also link to more resources.
+Use this project as a pastime with friends, to test your knowledge, or discover some rare triva about dugeons and dragons. Click on the bonfire to light things up.
 
-_For more examples, please refer to the [Documentation](https://example.com)_
+
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
@@ -161,7 +151,7 @@ Don't forget to give the project a star! Thanks again!
 <!-- LICENSE -->
 ## License
 
-Distributed under the MIT License. See `LICENSE.txt` for more information.
+Distributed under the OGL and SRD License. See `LICENSE.txt` for more information.
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
@@ -181,9 +171,9 @@ Project Link: [https://github.com/nicholastonelli/dnd_trivia](https://github.com
 <!-- ACKNOWLEDGMENTS -->
 ## Acknowledgments
 
-* []()
-* []()
-* []()
+* [](Billie Heidelberg)
+* [](Paresh Sharma)
+* [](Matt Keane)
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
@@ -205,5 +195,3 @@ Project Link: [https://github.com/nicholastonelli/dnd_trivia](https://github.com
 [linkedin-url]: https://linkedin.com/in/nicholas-tonelli-9b9000226/
 [product-screenshot]: images/screenshot.png
 
-
-CREDITS: "Music: www.bensound.com" 

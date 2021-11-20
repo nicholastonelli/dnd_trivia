@@ -1,6 +1,6 @@
 License
 
-Copyright (c) 2021 Nicholas TOnelli
+Copyright (c) 2021 Nicholas Tonelli
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
@@ -21,5 +21,8 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 
-Dungeons and Dragons Ampersand is owned by Wizards of the Coast, and Dungeons and Dragons information published according to SRD and OGL License https://media.wizards.com/2016/downloads/DND/SRD-OGL_V5.1.pdf Music by BenSound.
+Dungeons and Dragons Ampersand is owned by Wizards of the Coast, and Dungeons 
+and Dragons information published according to SRD and OGL License 
+https://media.wizards.com/2016/downloads/DND/SRD-OGL_V5.1.pdf Music by BenSound
+@ www.BenSound.com
 

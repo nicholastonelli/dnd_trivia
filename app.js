@@ -909,27 +909,27 @@ function cardDeck() {
       "<img src='images/cards0.png' alt='first deck'  class='decks'  id='deckImg1'></img>"
     document.querySelector("#deck2").innerHTML =
       "<img src='images/cards6.png' alt='second deck'  class='decks'  id='deckImg2'></img>"
-  } else if (triviaWell.length <= 5) {
+  } else if (triviaWell.length <= 10) {
     document.querySelector("#deck1").innerHTML =
       "<img src='images/cards1.png' alt='first deck'  class='decks'  id='deckImg1'></img>"
     document.querySelector("#deck2").innerHTML =
       "<img src='images/cards5.png' alt='second deck'  class='decks'  id='deckImg2'></img>"
-  } else if (triviaWell.length <= 10) {
+  } else if (triviaWell.length <= 20) {
     document.querySelector("#deck1").innerHTML =
       "<img src='images/cards2.png' alt='first deck'  class='decks'  id='deckImg1'></img>"
     document.querySelector("#deck2").innerHTML =
       "<img src='images/cards4.png' alt='second deck'  class='decks'  id='deckImg2'></img>"
-  } else if (triviaWell.length <= 15) {
+  } else if (triviaWell.length <= 30) {
     document.querySelector("#deck1").innerHTML =
       "<img src='images/cards3.png' alt='first deck'  class='decks'  id='deckImg1'></img>"
     document.querySelector("#deck2").innerHTML =
       "<img src='images/cards3.png' alt='second deck'  class='decks'  id='deckImg2'></img>"
-  } else if (triviaWell.length <= 20) {
+  } else if (triviaWell.length <= 40) {
     document.querySelector("#deck1").innerHTML =
       "<img src='images/cards4.png' alt='first deck'  class='decks'  id='deckImg1'></img>"
     document.querySelector("#deck2").innerHTML =
       "<img src='images/cards2.png' alt='second deck'  class='decks'  id='deckImg2'></img>"
-  } else if (triviaWell.length <= 25) {
+  } else if (triviaWell.length <= 50) {
     document.querySelector("#deck1").innerHTML =
       "<img src='images/cards5.png' alt='first deck'  class='decks'  id='deckImg1'></img>"
     document.querySelector("#deck2").innerHTML =
